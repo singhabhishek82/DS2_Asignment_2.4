@@ -1,0 +1,15 @@
+#Python Program to print the given string in the format specified in the sample output.
+
+string = ("WE, THE PEOPLE OF INDIA, having solemnly resolved to constitute India into a "
+"SOVEREIGN, SOCIALIST, SECULAR, DEMOCRATIC REPUBLIC and to secure to all "
+"its citizens")
+m=string.split(',')
+n=m[5].partition('and')
+line1=m[0]+","+m[1]+","
+line2=m[2]+','+"!"
+line2=line2.rjust(70)
+line3=m[3]+', '+m[4]+', '+n[0]
+line3=line3.rjust(55)
+line4=n[1]+" "+n[2]+':'
+line4=line4.rjust(49)
+print(line1,'\n',line2,'\n',line3,'\n',line4)
